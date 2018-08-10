@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="HVD_Comic_Serif_Pro.otf">
+            <string>HVDComicSerifPro</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainViewController" customModule="Arithmetic" customModuleProvider="target">
+            <connections>
+                <outlet property="addOp" destination="PcV-bx-hHy" id="slX-Yg-lT8"/>
+                <outlet property="currentValLabel" destination="wLy-5K-B1d" id="WS5-5b-Iwz"/>
+                <outlet property="divOp" destination="sce-34-b67" id="UMC-11-DCa"/>
+                <outlet property="mulOp" destination="Bmz-mX-U2Y" id="h3w-Ss-bnz"/>
+                <outlet property="resetBack" destination="k9C-WP-8z6" id="taM-9t-D62"/>
+                <outlet property="resetButton" destination="P3k-HF-hCw" id="ODF-5D-cXd"/>
+                <outlet property="subOp" destination="VXT-md-c8a" id="2mG-G8-0fN"/>
+                <outlet property="targetLabel" destination="yYm-g1-fhz" id="C7k-YC-WlV"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="winScreen" destination="KK8-qe-oMR" id="6Q3-M4-ujK"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="gLQ-tk-AhC">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="number" translatesAutoresizingMaskIntoConstraints="NO" id="zz7-vj-gdW">
+                    <rect key="frame" x="127" y="314" width="120" height="70"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="number" translatesAutoresizingMaskIntoConstraints="NO" id="gLH-In-KhC">
+                    <rect key="frame" x="137" y="426" width="100" height="75"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="number" translatesAutoresizingMaskIntoConstraints="NO" id="g1Y-Vn-ADf">
+                    <rect key="frame" x="275" y="311" width="100" height="75"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="number" translatesAutoresizingMaskIntoConstraints="NO" id="XIr-SN-7v2">
+                    <rect key="frame" x="0.0" y="314" width="100" height="75"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="number" translatesAutoresizingMaskIntoConstraints="NO" id="hh2-Lg-PJ0">
+                    <rect key="frame" x="137" y="216" width="100" height="75"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PcV-bx-hHy">
+                    <rect key="frame" x="15" y="329" width="70" height="44"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" name="HVDComicSerifPro" family="HVD Comic Serif Pro" pointSize="24"/>
+                    <state key="normal" title="+ 5"/>
+                    <connections>
+                        <action selector="AddOpClick:" destination="-1" eventType="touchUpInside" id="hwy-yN-8If"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VXT-md-c8a">
+                    <rect key="frame" x="290" y="326" width="70" height="44"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" name="HVDComicSerifPro" family="HVD Comic Serif Pro" pointSize="24"/>
+                    <state key="normal" title="- 5"/>
+                    <connections>
+                        <action selector="SubOpClick:" destination="-1" eventType="touchUpInside" id="Igc-G5-dOL"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bmz-mX-U2Y">
+                    <rect key="frame" x="152" y="231" width="70" height="44"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" name="HVDComicSerifPro" family="HVD Comic Serif Pro" pointSize="24"/>
+                    <state key="normal" title="x 5"/>
+                    <connections>
+                        <action selector="MulOpClick:" destination="-1" eventType="touchUpInside" id="bco-nn-3xj"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="76" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wLy-5K-B1d">
+                    <rect key="frame" x="137" y="327" width="100" height="44"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" name="HVDComicSerifPro" family="HVD Comic Serif Pro" pointSize="36"/>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="number" translatesAutoresizingMaskIntoConstraints="NO" id="GoV-wH-6Z8">
+                    <rect key="frame" x="105" y="56" width="164" height="76"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yYm-g1-fhz">
+                    <rect key="frame" x="127" y="73" width="120" height="42"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" name="HVDComicSerifPro" family="HVD Comic Serif Pro" pointSize="32"/>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sce-34-b67">
+                    <rect key="frame" x="152" y="441" width="70" height="44"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" name="HVDComicSerifPro" family="HVD Comic Serif Pro" pointSize="24"/>
+                    <state key="normal" title="÷ 5"/>
+                    <connections>
+                        <action selector="DivOpClick:" destination="-1" eventType="touchUpInside" id="P28-Rg-Cxj"/>
+                    </connections>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="number" translatesAutoresizingMaskIntoConstraints="NO" id="k9C-WP-8z6">
+                    <rect key="frame" x="110" y="530" width="155" height="79"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P3k-HF-hCw">
+                    <rect key="frame" x="132" y="549" width="110" height="41"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" name="HVDComicSerifPro" family="HVD Comic Serif Pro" pointSize="34"/>
+                    <state key="normal" title="Reset"/>
+                    <connections>
+                        <action selector="resetClick:" destination="-1" eventType="touchUpInside" id="IHN-Qu-tDJ"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Target" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jfB-Zx-yvr">
+                    <rect key="frame" x="157" y="36" width="61" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" name="HVDComicSerifPro" family="HVD Comic Serif Pro" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="winner" translatesAutoresizingMaskIntoConstraints="NO" id="KK8-qe-oMR">
+                    <rect key="frame" x="42" y="239" width="291" height="188"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="307.5" y="-258.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="background" width="375" height="667"/>
+        <image name="number" width="302" height="129"/>
+        <image name="winner" width="478" height="240"/>
+    </resources>
+</document>
